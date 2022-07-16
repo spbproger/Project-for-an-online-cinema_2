@@ -1,0 +1,45 @@
+# Доступ только Authorized Required, @ auth_required
+GET http://127.0.0.1:1987/directors/
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MzkwOH0.OdIdizAoq_SC52SyBBKnasbsCdAbTs0NWQ96OyeVics
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+POST http://127.0.0.1:1987/directors/
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MzkwOH0.OdIdizAoq_SC52SyBBKnasbsCdAbTs0NWQ96OyeVics
+
+{
+  "id": 21,
+  "name": "Дэвид Финчер"
+}
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+GET http://127.0.0.1:1987/directors/4
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjMwMX0.smA1zMTZHC7nnCQmZiPMeLgFX4VPp4p__KQmb_wIKtc
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+PUT http://127.0.0.1:1987/directors/9
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjMwMX0.smA1zMTZHC7nnCQmZiPMeLgFX4VPp4p__KQmb_wIKtc
+
+{
+  "id": 2,
+  "name": "Джордж Лукасccc"
+}
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+DELETE http://127.0.0.1:1987/directors/22
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjMwMX0.smA1zMTZHC7nnCQmZiPMeLgFX4VPp4p__KQmb_wIKtc

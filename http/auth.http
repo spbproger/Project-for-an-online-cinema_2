@@ -1,0 +1,21 @@
+# Anonymous (кто угодно)
+POST http://127.0.0.1:1987/auth/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Олег",
+  "password": "dnB4$2KY1Fx%"
+}
+
+###
+
+# Anonymous (кто угодно)
+PUT http://127.0.0.1:1987/auth/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY2OTIwMTg4NX0.0M592REC61wkBJntPA3-eiMhhf7NxnfQ03Yd88Yasmc"
+}
+

@@ -1,0 +1,45 @@
+# Доступ только Authorized Required, @ auth_required
+GET http://127.0.0.1:1987/genres/
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjU2Nn0.MfmdPvCxR-_Pv15c0hUy65P9Jv8CBhm0TwK09owmZ_g
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+POST http://127.0.0.1:1987/genres/
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjU2Nn0.MfmdPvCxR-_Pv15c0hUy65P9Jv8CBhm0TwK09owmZ_g
+
+{
+  "id": 19,
+  "name": "Документальный"
+}
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+GET http://127.0.0.1:1987/genres/12
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjU2Nn0.MfmdPvCxR-_Pv15c0hUy65P9Jv8CBhm0TwK09owmZ_g
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+PUT http://127.0.0.1:1987/genres/19
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjU2Nn0.MfmdPvCxR-_Pv15c0hUy65P9Jv8CBhm0TwK09owmZ_g
+
+{
+  "id": 19,
+  "name": "Мюзикл - 2"
+}
+
+###
+
+# Доступ только Authorized Required, @ auth_required
+# Доступ только Role admin Required, @ admin_required
+DELETE http://127.0.0.1:1987/genres/19
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilx1MDQxZVx1MDQzYlx1MDQzNVx1MDQzMyIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Nzk3MjU2Nn0.MfmdPvCxR-_Pv15c0hUy65P9Jv8CBhm0TwK09owmZ_g
